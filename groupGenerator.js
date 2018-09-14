@@ -22,7 +22,7 @@ while (names.length > 0) {
         if (names.length > 0) {
             shuffle(names);
             tempArr.push(names.pop());
-            // if the names do not divide equally into groups => adds the extra person to the last created group
+            // if the names do not divide equally into groups -> adds the extra person to the last created group
             if (!isDividedEvenly() && names.length == 1) {
                 tempArr.push(names.pop());
             }
