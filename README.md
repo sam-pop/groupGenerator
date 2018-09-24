@@ -1,6 +1,6 @@
 # groupGenerator
 
-Simple node tool that divides students into (selected size) groups randomly.
+Simple node tool that divides students into groups randomly.
 
 ## How to use
 
@@ -10,8 +10,9 @@ Simple node tool that divides students into (selected size) groups randomly.
 
 - `node groupGenerator.js` - will log the randomly generated groups of students (using the group size specified in the `data.js` file).
 
-- _OR_ you can pass the group size as an argument through the command-line:
-  `node groupGenerator.js <groupSize>`
+_OR_
+
+- `node groupGenerator.js <groupSize>` - will pass the group size as an argument through the command-line:
 
 ### Example
 
