@@ -8,7 +8,7 @@ const data = require("./data");
 // Mapping the variable to the data file
 const names = data.names;
 // Names we do not want to be in the first index of the array when divided into pairs (groupSize = 2, for pair programming, first name is the driver)
-const flags = ["A"];
+const navigators = data.navigators;
 
 // Declare the groupSize variable and assign it a value from the data *unless* the value is passed as an arg throught the cli
 var groupSize = process.argv[2]
@@ -32,10 +32,10 @@ while (names.length > 0) {
       }
     }
   }
-  // if a person is marked as a flag --> switch places in the array
+  // if a person is marked as a navigator --> switch places in the array
   if (groupSize == 2) {
-    for (f of flags) {
-      if (tempArr[0].indexOf(f) > -1) {
+    for (n of navigators) {
+      if (tempArr[0].indexOf(n) > -1) {
         switchPlaces(tempArr);
       }
     }
