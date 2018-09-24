@@ -7,7 +7,7 @@
 const data = require("./data");
 // Mapping the variable to the data file
 const names = data.names;
-// Names we do not want to be in the first index of the array when divided into pairs (groupSize = 2, for pair programming, first name is the typist)
+// Names we do not want to be in the first index of the array when divided into pairs (groupSize = 2, for pair programming, first name is the driver)
 const flags = ["A"];
 
 // Declare the groupSize variable and assign it a value from the data *unless* the value is passed as an arg throught the cli
@@ -39,8 +39,10 @@ while (names.length > 0) {
         switchPlaces(tempArr);
       }
     }
-  }
-  console.log(`Group #${++counter}: ${tempArr}`);
+    console.log(
+      `#${++counter} Driver: ${tempArr[0]}, Navigator: ${tempArr[1]}`
+    );
+  } else console.log(`Group #${++counter}: ${tempArr}`);
 }
 
 /*
