@@ -4,14 +4,19 @@
  * ~ Created by Samuel Poplovitch
  */
 
-// Mapping variables to the data file
 const data = require("./data");
+
+// Mapping the variable to the data file
 const names = data.names;
-const groupSize = data.groupSize;
-// -----------------------------------
+
+// Assign the groupSize variable a value from the data unless passed as an arg throught the cli
+var groupSize = process.argv[2]
+  ? (groupSize = process.argv[2])
+  : (groupSize = data.groupSize);
 
 // Names we do not want to be in the first index of the array when divided into pairs (for pair programming, first name is the typist)
 const flags = ["A"];
+
 // -----------------------------------
 
 // Runs until all names are grouped
