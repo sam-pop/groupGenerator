@@ -40,7 +40,7 @@ while (names.length > 0) {
       }
     }
     console.log(
-      `#${++counter} Driver: ${tempArr[0]}, Navigator: ${tempArr[1]}`
+      `${++counter}) Driver: ${tempArr[0]}, Navigator: ${tempArr[1]}`
     );
   } else console.log(`Group #${++counter}: ${tempArr}`);
 }
