@@ -19,7 +19,7 @@ _OR_ you can pass the group size as an arg:
 `node groupGenerator.js 2` can return:
 
 ```
-[ 'G', 'E' ]
-[ 'D', 'C' ]
-[ 'B', 'A', 'F' ]
+Group #1: G,C
+Group #2: D,A
+Group #3: B,F,E
 ```

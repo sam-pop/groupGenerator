@@ -5,19 +5,18 @@
  */
 
 const data = require("./data");
-
 // Mapping the variable to the data file
 const names = data.names;
+// Names we do not want to be in the first index of the array when divided into pairs (groupSize = 2, for pair programming, first name is the typist)
+const flags = ["A"];
 
-// Assign the groupSize variable a value from the data unless passed as an arg throught the cli
+// Declare the groupSize variable and assign it a value from the data *unless* the value is passed as an arg throught the cli
 var groupSize = process.argv[2]
   ? (groupSize = process.argv[2])
   : (groupSize = data.groupSize);
 
-// Names we do not want to be in the first index of the array when divided into pairs (for pair programming, first name is the typist)
-const flags = ["A"];
-
-// -----------------------------------
+// Count the number of groups
+let counter = 0;
 
 // Runs until all names are grouped
 while (names.length > 0) {
@@ -41,7 +40,7 @@ while (names.length > 0) {
       }
     }
   }
-  console.log(tempArr);
+  console.log(`Group #${++counter}: ${tempArr}`);
 }
 
 /*
