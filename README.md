@@ -8,11 +8,10 @@ Simple node tool that divides students into (selected size) groups randomly.
 
 **Run** the following command in your command-line:
 
-`node groupGenerator.js` will log the randomly generated groups of students (using the group size specified in the `data.js` file).
+- `node groupGenerator.js` - will log the randomly generated groups of students (using the group size specified in the `data.js` file).
 
-_OR_ you can pass the group size as an argument through the command-line:
-
-`node groupGenerator.js <groupSize>`
+- _OR_ you can pass the group size as an argument through the command-line:
+  `node groupGenerator.js <groupSize>`
 
 ### Example
 
