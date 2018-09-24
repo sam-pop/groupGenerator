@@ -12,7 +12,7 @@ OR you can pass the group size as an arg:
 
 `node groupGenerator.js <groupSize>`
 
-**Example:**
+### Example:
 
 `node groupGenerator.js 2` can return:
 
