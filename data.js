@@ -5,7 +5,7 @@
 */
 
 const data = {
-  groupSize: 2,
+  groupSize: 3,
 
   navigators: ["A"],
 

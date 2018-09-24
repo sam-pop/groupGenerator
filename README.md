@@ -1,10 +1,16 @@
 # groupGenerator
 
-Simple node tool that divides students into groups. _randomly_.
+> Simple node tool that divides students into groups. _randomly_.
+
+## Customizable Options
+
+- Student names
+- Group size
+- Pair-programming driver/navigator limitation
 
 ## How to use
 
-**Edit** the `data.js` file to reflect the names of the students, the desired group size and to specify any limitations for pair-programming (group size of 2).
+**Edit** the `data.js` file to reflect the names of the students, the desired group size and to specify limitations for pair-programming (group size of 2).
 
 **Run** the following command in your command-line:
 

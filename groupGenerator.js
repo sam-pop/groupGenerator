@@ -11,7 +11,7 @@ const names = data.names;
 const navigators = data.navigators;
 
 // Declare the groupSize variable and assign it a value from the data *unless* the value is passed as an arg throught the cli
-var groupSize = process.argv[2]
+var groupSize = parseInt(process.argv[2])
   ? (groupSize = process.argv[2])
   : (groupSize = data.groupSize);
 
