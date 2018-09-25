@@ -10,7 +10,7 @@ const names = data.names;
 // Names we do not want to be in the first index of the array when divided into pairs (groupSize = 2, for pair programming, first name is the driver)
 const mustBeNavigators = data.mustBeNavigators;
 
-// Declare the groupSize variable and assign it a value from the data *unless* the value is passed as an arg throught the CLI
+// Declare the groupSize variable and assign it a value from the data *unless* the value is passed as an arg through the CLI
 // We use `var` to declare the groupSize variable and assign a conditional value to it simultaneously
 var groupSize = parseInt(process.argv[2])
   ? (groupSize = process.argv[2])
