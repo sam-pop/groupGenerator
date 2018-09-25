@@ -2,7 +2,7 @@
 
 > Simple node tool that divides students into groups. _randomly_.
 
-## Customizable Options
+## Customizable options
 
 - Student names
 - Group size
