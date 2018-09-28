@@ -54,7 +54,7 @@ while (names.length > 0) {
 
 // Randomly shuffle the array
 function shuffle(array) {
-  var currentIndex = array.length,
+  let currentIndex = array.length,
     randomIndex,
     temporaryValue;
 
